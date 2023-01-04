@@ -1,3 +1,6 @@
+
+global GUI_version; GUI_version = '1.0'
+
 import tkinter as tk
 import tkinter.font
 import numpy as np
@@ -477,7 +480,7 @@ class NewGUI():
 
         self.root = tk.Tk()
         self.root.config(bg='#fafafa')
-        self.root.title("Kursentwicklung")
+        self.root.title("Kursentwicklung (" + GUI_version + ")")
 
         # get fontsize
         self.fontsize = 11
