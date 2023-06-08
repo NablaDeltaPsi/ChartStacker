@@ -1,5 +1,5 @@
 
-global GUI_version; GUI_version = '1.1'
+global GUI_version; GUI_version = '1.2'
 
 import tkinter as tk
 import tkinter.font
@@ -296,7 +296,7 @@ def calc_y_limits(xlim, x, y, dropdown):
     if y_max == math.inf:
         y_max = 1
     if dropdown == "Auto":
-        if y_min > 0 and (y_max-y_min)/y_max > 0.4:                
+        if y_min > 0 and (y_max-y_min)/y_max > 0.8:                
             ylim = [0, y_max*1.02]
         else:
             ylim = [y_min-0.02*(y_max-y_min), y_max+0.02*(y_max-y_min)]
