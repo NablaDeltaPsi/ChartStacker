@@ -818,11 +818,11 @@ class Plotwindow():
                     this_size = self.fontsize
                 this_color = this_colorfactor * np.array([1, 1, 1])
                 if self.root.check_comments.get() and self.root.check_betrag.get():
-                    this_label = str(cmt_text[i]) + " (" + '{0:g}'.format(abs(cmt_diff[i])) + ")"
+                    this_label = str(cmt_text[i]) + " (" + '{0:.0f}'.format(abs(cmt_diff[i])) + ")"
                 elif self.root.check_comments.get():
                     this_label = str(cmt_text[i])
                 else:
-                    this_label = '{0:g}'.format(abs(cmt_diff[i]))
+                    this_label = '{0:.0f}'.format(abs(cmt_diff[i]))
                 if cmt_diff[i] > 0:
                     self.ax.text(cmt_x[i], cmt_y[i], this_label + "–", fontsize = str(this_size), va = 'center', ha = 'right', color = this_color, family='Arial Narrow')
                 else:
