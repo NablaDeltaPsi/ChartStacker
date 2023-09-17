@@ -1,5 +1,5 @@
 
-global GUI_version; GUI_version = '1.2'
+global GUI_version; GUI_version = '1.3'
 
 import tkinter as tk
 import tkinter.font
@@ -502,7 +502,7 @@ class NewGUI():
 
         # icon and DPI
         try:
-            self.root.iconbitmap('ico_netshell_dll0158.ico')
+            self.root.iconbitmap('Kursentwicklung.ico')
             self.root.update() # important: recalculate the window dimensions
         except:
             print("Found no icon.")
